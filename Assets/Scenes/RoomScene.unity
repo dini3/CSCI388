@@ -3037,7 +3037,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 2147483648
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -4822,12 +4822,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1429191003}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1482511093 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2265211481680741081, guid: 97d5ec2098013934bb7e8de14095cfa8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1737418205}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1567470227 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 190737620782889315, guid: 2a0989c512f34104c9d5ca8e832c0b21,
@@ -5645,11 +5639,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2265211481680741081, guid: 97d5ec2098013934bb7e8de14095cfa8,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1737418212}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97d5ec2098013934bb7e8de14095cfa8, type: 3}
 --- !u!4 &1737418206 stripped
 Transform:
@@ -5657,25 +5647,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1737418205}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1737418212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482511093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e311508d4777a834fb25a1729a564503, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  threshold: 0.076
-  OnBegin:
-    m_PersistentCalls:
-      m_Calls: []
-  OnEnd:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1752254698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189,
@@ -6665,7 +6636,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 2147483648
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
