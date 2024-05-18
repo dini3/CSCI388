@@ -4,13 +4,19 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class VinylHandler : MonoBehaviour
 {
     private XRSocketInteractor socketInteractor;
-    public GameObject playerHandlle;
+    public GameObject playerHandlle, platter;
+    private bool vinylAttached = true;
 
     void Start()
     {
         socketInteractor = GetComponent<XRSocketInteractor>();
         socketInteractor.selectEntered.AddListener(OnSelectEnter);
         socketInteractor.selectExited.AddListener(OnSelectExit);
+    } 
+    private void Update()
+    {  
+        if (vinylAttached) 
+            platter.transform.Rotate(Vector3.up, 1); 
     }
 
     public void OnSelectEnter(SelectEnterEventArgs args)
@@ -21,6 +27,7 @@ public class VinylHandler : MonoBehaviour
         {
             socketInteraction.PlayMusic(args);
             playerHandlle.transform.Rotate(Vector3.up, 60);
+            vinylAttached = true;
         }
     }
 
@@ -32,6 +39,7 @@ public class VinylHandler : MonoBehaviour
         {
             socketInteraction.StopMusic(args);
             playerHandlle.transform.Rotate(Vector3.up, -60);
+            vinylAttached = false;
         }
     }
 }
