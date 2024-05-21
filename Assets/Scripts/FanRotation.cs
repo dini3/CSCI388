@@ -16,16 +16,10 @@ public class FanRotation : MonoBehaviour
         float targetSpeed = isOn ? maxRotationSpeed : 0f;
         currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, acceleration * Time.deltaTime);
         transform.Rotate(transform.up, currentSpeed * Time.deltaTime);
-    }
+    } 
 
-    public void TurnOn()
+    public void ChangeState()
     {
-        isOn = true;
-    }
-
-    public void TurnOff()
-    {
-        isOn = false;
-
+        isOn = !isOn;
     }
 }
